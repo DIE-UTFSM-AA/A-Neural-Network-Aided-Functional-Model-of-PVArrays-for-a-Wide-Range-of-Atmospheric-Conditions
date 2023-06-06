@@ -10,8 +10,6 @@ As the cost of photovoltaic (PV) power generation declines and becomes competiti
 ## Installation
 For the installation and start-up of the repository, it is necessary to have:
 
-
-
 * [GEM cookbook](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master//examples/environment_features/GEM_cookbook.ipynb)
 * [Keras-rl2 example](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master/examples/reinforcement_learning_controllers/keras_rl2_dqn_disc_pmsm_example.ipynb)
 * [Stable-baselines3 example](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master/examples/reinforcement_learning_controllers/stable_baselines3_dqn_disc_pmsm_example.ipynb)
@@ -19,7 +17,7 @@ For the installation and start-up of the repository, it is necessary to have:
 
 
 
-## Database:
+### Database:
 The data used for the development of this work are obtained in [Data for Validating Models for PV Module Performance](https://datahub.duramat.org/dataset/data-for-validating-models-for-pv-module-performance) of NREL
 
 
