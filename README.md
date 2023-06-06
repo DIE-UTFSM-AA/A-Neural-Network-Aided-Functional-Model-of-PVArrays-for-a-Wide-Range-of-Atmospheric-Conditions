@@ -8,12 +8,17 @@ As the cost of photovoltaic (PV) power generation declines and becomes competiti
 
 
 ## Installation
-For the installation and start-up of the repository, it is necessary to have:
+For the installation and start-up of the repository, it is necessary to have the following libraries:
 
-* [GEM cookbook](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master//examples/environment_features/GEM_cookbook.ipynb)
-* [Keras-rl2 example](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master/examples/reinforcement_learning_controllers/keras_rl2_dqn_disc_pmsm_example.ipynb)
-* [Stable-baselines3 example](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master/examples/reinforcement_learning_controllers/stable_baselines3_dqn_disc_pmsm_example.ipynb)
-* [MPC  example](https://colab.research.google.com/github/upb-lea/gym-electric-motor/blob/master/examples/model_predictive_controllers/pmsm_mpc_dq_current_control.ipynb)
+* [tensorflow](https://www.tensorflow.org/install/pip)
+* [tensorflow-probability](https://www.tensorflow.org/probability/install)
+* [scikit-learn](https://scikit-learn.org/stable/install.html)
+* [numpy](https://numpy.org/install/)
+* [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+* [sympy](https://www.sympy.org/en/index.html)
+
+
+
 
 
 
