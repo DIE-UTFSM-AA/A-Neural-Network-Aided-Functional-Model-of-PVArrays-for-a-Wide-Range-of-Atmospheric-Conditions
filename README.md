@@ -4,8 +4,5 @@ As the cost of photovoltaic (PV) power generation declines and becomes competiti
 
 
 ## Aca se cita
-https://datahub.duramat.org/dataset/data-for-validating-models-for-pv-module-performance
-
-    
-    ads
+    https://datahub.duramat.org/dataset/data-for-validating-models-for-pv-module-performance
     
