@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors
 import matplotlib.gridspec as gridspec
-from PVComplement import normpath
 
 def SurFacePlot(x2, y2, z2, grid_x, grid_y, grid_z, zlabel, outlabel, PVModule, path, save=False, angle=30, s=10):
   cmap = plt.cm.get_cmap("jet", 20)
@@ -58,6 +57,6 @@ def SurFacePlot(x2, y2, z2, grid_x, grid_y, grid_z, zlabel, outlabel, PVModule, 
   m.set_array([])
   cbar = fig.colorbar(m, ax=ax4, extend='both', ticks=np.linspace(np.nanmin(x2), np.nanmax(x2), 6))
   cbar.set_label('Irradiance (W/m$^2$)')
-  if save:
-    plt.savefig(normpath(path, outlabel), bbox_inches='tight')
-  plt.show()
+  # if save:
+  #   plt.savefig(normpath(path, outlabel), bbox_inches='tight')
+  # plt.show()

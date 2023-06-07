@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from special import *
+from .special import *
 import decimal
 decimal.getcontext().prec = 20
 

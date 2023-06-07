@@ -6,26 +6,36 @@ from keras.callbacks import History, EarlyStopping, ModelCheckpoint, TerminateOn
 from keras.layers import Dense
 from sklearn.preprocessing import StandardScaler
 
-# from tensorflow.keras.layers import Dense
-
 class CustomModel(keras.Model):
   def train_step(self, data):
     x, y = data
     with tf.GradientTape() as tape: 
       x0, x1 = tf.split(x, [5, 2], 1)
-      y_pred = self(x0, training=True) # delta x
-      # loss = self.compiled_loss(y, tf.concat([x, y_pred], axis=1), regularization_losses=self.losses)
+      # forward pass
+      # - compute delta_x
+      y_pred = self(x0, training=True)
+      
+      # compute loss
       loss = self.compiled_loss(y, tf.concat([x, y_pred], axis=1)) # 
-    grads = tape.gradient(loss, self.trainable_weights)
+
+    # Update weights
+    grads = tape.gradient(loss, self.trainable_weights)    
     self.optimizer.apply_gradients(zip(grads, self.trainable_weights))
+
+    # compute metrics
     self.compiled_metrics.update_state(y, tf.concat([x, y_pred], axis=1))
     return {m.name: m.result() for m in self.metrics}
 
   def test_step(self, data):
     x, y = data
+    # forward pass
+    # - compute delta_x
     y_pred = self(x, training=False)
-    # self.compiled_loss(y, tf.concat([x, y_pred], axis=1), regularization_losses=self.losses)
+
+    # compute loss
     self.compiled_loss(y, tf.concat([x, y_pred], axis=1))
+
+    # compute metrics
     self.compiled_metrics.update_state(y, tf.concat([x, y_pred], axis=1))
     return {m.name: m.result() for m in self.metrics}
 
@@ -93,22 +103,6 @@ class DNNmodelClass:
     Rs, Gp, IL, b = [tf.math.abs(k) for k in [Rs, Gp, IL, b]]
     Isc, Vsc, Imp, Vmp, Ioc, Voc = tf.split(self.Predict.predict(Rs, Gp, IL, tf.math.exp(LogI0), b), axis=1, num_or_size_splits=6)
     return tf.concat([Isc, Imp*Vmp, Imp, Vmp, Voc], axis=1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   def DNNMetric(self, y_true, y_pred, var):
     if self.training:

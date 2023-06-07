@@ -1,5 +1,5 @@
 import numpy as np
-from special import *
+from .special import *
 from scipy.constants import Boltzmann as k, eV as q, zero_Celsius as T0
 
 class PVModelClass: 
