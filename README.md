@@ -1,3 +1,4 @@
+*** project in progress
 # A Neural Network-Aided Functional Model of Photovoltaic Arrays for a Wide Range of Atmospheric Conditions
 
 ![Parameters dependency over a wide operating range for PV module](https://github.com/DIE-UTFSM-AA/A-Neural-Network-Aided-Functional-Model-of-PVArrays-for-a-Wide-Range-of-Atmospheric-Conditions/blob/main/FIgs/fig2.png)
