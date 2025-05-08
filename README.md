@@ -34,9 +34,7 @@ The data used for the development of this work are obtained in [Data for Validat
 ## Contents
 
 
-![Reconstruction of the behavior of the reciprocal of the modified nonideality factor over a wide range of operating conditions for PV module](https://github.com/DIE-UTFSM-AA/A-Neural-Network-Aided-Functional-Model-of-PVArrays-for-a-Wide-Range-of-Atmospheric-Conditions/blob/main/FIgs/fig1.png)
-
-![Parameters dependency over a wide operating range for PV module](https://github.com/DIE-UTFSM-AA/A-Neural-Network-Aided-Functional-Model-of-PVArrays-for-a-Wide-Range-of-Atmospheric-Conditions/blob/main/FIgs/fig1.png)
+![Reconstruction of the behavior of the reciprocal of the modified nonideality factor over a wide range of operating conditions for PV module](https://github.com/DIE-UTFSM-AA/A-Neural-Network-Aided-Functional-Model-of-PVArrays-for-a-Wide-Range-of-Atmospheric-Conditions/blob/main/FIgs/fig2.png)
 
 
 
